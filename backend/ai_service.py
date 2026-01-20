@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 import json
 import requests
@@ -6,7 +8,7 @@ import re
 
 # ================= 配置区 =================
 # 请确保 API_KEY 正确且有余额
-API_KEY = "sk-09469bb302c44f8a9b386790ac149f0a"
+API_KEY = os.getenv("key")
 API_URL = "https://api.deepseek.com/chat/completions"
 # =========================================
 
