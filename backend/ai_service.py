@@ -5,9 +5,11 @@ import json
 import requests
 import string
 import re
+from dotenv import load_dotenv
 
 # ================= 配置区 =================
 # 请确保 API_KEY 正确且有余额
+load_dotenv()
 API_KEY = os.getenv("key")
 API_URL = "https://api.deepseek.com/chat/completions"
 # =========================================
